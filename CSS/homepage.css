@@ -239,14 +239,6 @@ body {
         margin-bottom:18px;
     }
 
-    /* .img2 {
-        width:100%;
-        object-fit: cover;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-        text-align: center;
-    } */
-
         /*LA NOTE ENCHANTEE*/
         .img3 {
             width:100%;
@@ -262,10 +254,6 @@ body {
         }
 
         /*NOUVEAU*/
-        /* .image-container {
-            position: relative;
-            display: inline-block;
-        } */
 
         .rectangle {
             width: 80px;
@@ -562,7 +550,6 @@ body {
             font-size: 12px;
             margin-right: 0px;
             margin-left: -13%;
-            /* position:relative; */
         }
         
         .colorhover {
