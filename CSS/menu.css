@@ -7,7 +7,6 @@ body {
 }
 
 /* Small devices (phones, less than 768px) */
-/* @media (max-width:767px) { */
     /* LOGO */
     .logo {
         width: 40%;
@@ -203,37 +202,23 @@ body {
             }
 
                     /*ANIMATION CARD*/
-                        /* .card {
-                            padding: 0px;
-                            background: #FFFFFF;
-                            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-                            border-radius: 15.0431px;
-                            padding-bottom: 12px;
-                            margin-bottom: 12px;
-                        } */
                         .card {
                             padding: 0px;
                             background: #FFFFFF;
                             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
                             border-radius: 15px;
-                            /* padding-bottom: 12px; */
                             margin-bottom: 12px;
                             display: flex;
                             flex-direction: row;
-                            /* background-color: red; */
-                            
                         }
                         .subCard{
                             width: 100%;
-                            /* background-color: blue; */
                         }
 
                         .checkbox{
                             overflow: hidden;
                             width: 0%;
                             background-color: #99E2D0;
-                            /* width: 59px;
-                            height: 69px; */
                             border-radius: 0px 15px 15px 0px;
                         }
 
@@ -246,61 +231,21 @@ body {
                             top: 35%;
                         }
 
-                        .card:hover .checkbox{
-                            animation: checkGrow 3s forwards;
-                            /* //animation-direction: alternate; */
-                        }
 
-                        .card:not(:hover) .subCard{
-                            animation: subCardGrow 3s forwards;
-                        }
+    .card:hover .checkbox{
+        transition: width 0.3s linear;
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        width: 23%;                           
+    }
+ 
 
-                        .card:not(:hover) .checkbox{
-                            animation: checkReduce 3s forwards;
-                        }
-
-                        .card:hover .subCard{
-                            animation: subCardReduce 3s forwards;
-                            /* animation-direction: alternate; */
-                            
-                        }
-
-                        @keyframes checkGrow {
-                            from {
-                            width: 0%;
-                            }
-                            to {
-                            width: 15%;
-                            }
-                        }
-                        @keyframes checkReduce {
-                            from {
-                            width: 15%;
-                            }
-                            to {
-                            width: 0%;
-                            }
-                        }
-
-                        @keyframes subCardGrow {
-                            from {
-                            width: 90%;
-                            }
-                            to {
-                            width: 100%;
-                            }
-                        }
-
-
-                        @keyframes subCardReduce {
-                            from {
-                            width: 100%;
-                            }
-                            to {
-                            width: 90%;
-                            }
-                        }
-
+    .card:not(:hover) .checkbox{
+        transition: width 0.3s linear;
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        width: 0%;
+    }
 
     h4 {
         font-family: 'Roboto', sans-serif;
@@ -329,16 +274,6 @@ body {
         font-size: 15.0431px;
         margin:0;
     }
-    /*
-
-        .card-subtitle {
-            border-bottom: none;
-            margin: 0;
-            
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
 
                 
         /*BUTTON*/
@@ -389,7 +324,6 @@ body {
         padding-top: 5px;
         padding-left: 15px;
     }
-/* } */
 
 
 
@@ -449,18 +383,11 @@ body {
 .background {
     position: relative;
     width: 70%;
-    
-    /* width: 1055px;
-    height: 1000px;
-    left: 193px; */
 }
 
 .text-container{
     position: relative;
     left: 20%;
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
     width: 100%;
     padding: 0 13px 0 13px;
     margin:0;
@@ -620,24 +547,19 @@ body {
                             background: #FFFFFF;
                             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
                             border-radius: 15px;
-                            /* padding-bottom: 12px; */
                             margin: 0 210px 12px 210px;
                             display: flex;
                             flex-direction: row;
-                            /* background-color: red; */
                             
                         }
                         .subCard{
                             width: 100%;
-                            /* background-color: blue; */
                         }
 
                         .checkbox{
                             overflow: hidden;
                             width: 0%;
                             background-color: #99E2D0;
-                            /* width: 59px;
-                            height: 69px; */
                             border-radius: 0px 15px 15px 0px;
                         }
 
@@ -645,67 +567,12 @@ body {
                             color: white;
                             display: flex;
                             justify-content: center;
-                            /* align-items: center; */
 
                             position:relative;
                             left: 1%;
                             top: 35%;
                         }
 
-                        .card:hover .checkbox{
-                            animation: checkGrow 3s forwards;
-                            animation-direction: alternate-reverse;
-                        }
-
-                        /* .card:not(:hover) .subCard{
-                            animation: subCardGrow 3s forwards;
-                        }
-
-                        .card:not(:hover) .checkbox{
-                            animation: checkReduce 3s forwards;
-                        } */
-
-                        .card:hover .subCard{
-                            animation: subCardReduce 3s forwards;
-                            animation-direction: alternate-reverse;
-                            
-                        }
-
-                        @keyframes checkGrow {
-                            from {
-                            width: 0%;
-                            }
-                            to {
-                            width: 10%;
-                            }
-                        }
-                        @keyframes checkReduce {
-                            from {
-                            width: 10%;
-                            }
-                            to {
-                            width: 0%;
-                            }
-                        }
-
-                        @keyframes subCardGrow {
-                            from {
-                            width: 90%;
-                            }
-                            to {
-                            width: 100%;
-                            }
-                        }
-
-
-                        @keyframes subCardReduce {
-                            from {
-                            width: 100%;
-                            }
-                            to {
-                            width: 90%;
-                            }
-                        }
 
 
     h4 {
