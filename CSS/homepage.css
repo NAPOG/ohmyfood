@@ -194,9 +194,7 @@ body {
             border-radius: 50%;
             padding: 5px 8px 5px 8px;
             font-size: 14px;
-            margin: 0;
-            position: block;
-            left: 15px;
+            margin-left: -40px;
         }
 
         .colorhover {
@@ -304,7 +302,7 @@ body {
             }
 
             .heartempty {
-                opacity:O;
+                opacity:0;
             }
 
             .heartfull {
@@ -674,7 +672,7 @@ body {
             }
 
             .heartempty {
-                opacity:O;
+                opacity:0;
             }
 
             .heartfull {
