@@ -60,21 +60,24 @@ body {
         border-top-left-radius: 15px;
         background-color: #F7F7F7;
         color: black;
-
-        height:500px;
-        overflow: scroll;
     }
 
         /*ANIMATION HEART*/
             .heart {
                 display:flex;
+                justify-content: space-between;
+            }
+
+            .heart div{
+               position: relative;
+               margin-right: 7%;
             }
 
             .fa-heart {
                 font-size: 22px;
                 position: absolute;
                 top: 25px;
-                left: 85%;
+                
             }
 
             .heartempty {
@@ -245,7 +248,7 @@ body {
 
                         .card:hover .checkbox{
                             animation: checkGrow 3s forwards;
-                            
+                            /* //animation-direction: alternate; */
                         }
 
                         .card:not(:hover) .subCard{
@@ -258,6 +261,7 @@ body {
 
                         .card:hover .subCard{
                             animation: subCardReduce 3s forwards;
+                            /* animation-direction: alternate; */
                             
                         }
 
@@ -271,8 +275,7 @@ body {
                         }
                         @keyframes checkReduce {
                             from {
-                            /* width: 15%; */
-                            width:0%;
+                            width: 15%;
                             }
                             to {
                             width: 0%;
@@ -474,11 +477,16 @@ body {
                 display:flex;
             }
 
+            .heart div{
+                position: relative;
+                
+             }
+
             .fa-heart {
                 font-size: 22px;
                 position: absolute;
                 top: 58px;
-                left: 70%;
+                
             }
 
             .heartempty {
@@ -646,19 +654,20 @@ body {
 
                         .card:hover .checkbox{
                             animation: checkGrow 3s forwards;
-                            
+                            animation-direction: alternate-reverse;
                         }
 
-                        .card:not(:hover) .subCard{
+                        /* .card:not(:hover) .subCard{
                             animation: subCardGrow 3s forwards;
                         }
 
                         .card:not(:hover) .checkbox{
                             animation: checkReduce 3s forwards;
-                        }
+                        } */
 
                         .card:hover .subCard{
                             animation: subCardReduce 3s forwards;
+                            animation-direction: alternate-reverse;
                             
                         }
 
@@ -672,8 +681,7 @@ body {
                         }
                         @keyframes checkReduce {
                             from {
-                            /* width: 10%; */
-                            width: 0%;
+                            width: 10%;
                             }
                             to {
                             width: 0%;
