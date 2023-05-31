@@ -80,7 +80,7 @@ body {
             }
 
             .heartempty {
-                opacity:0;
+                opacity:1;
             }
 
             .heartfull {
@@ -417,7 +417,7 @@ body {
             }
 
             .heartempty {
-                opacity:0;
+                opacity:1;
             }
 
             .heartfull {
