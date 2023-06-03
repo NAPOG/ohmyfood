@@ -803,7 +803,7 @@ body {
 
 
 
-@media (max-width: 1184px) {
+@media (min-device-width:400px) and (max-device-width: 1184px) {
     /* FONCTIONNEMENT */
     .frame2 {
         margin: 48px 0 68px 0;
